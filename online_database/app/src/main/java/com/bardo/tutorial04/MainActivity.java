@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         progress.setMessage("loading...");
         progress.show();
 
-        Call<ResponseMovie> request = RetrofitConfig.getApiService().ambilDataMovie("f22298c4b222abbcb4710649ec94cdf4");
+        Call<ResponseMovie> request = RetrofitConfig.getApiService().ambilDataMovie("your_api_key");
         request.enqueue(new Callback<ResponseMovie>() {
             @Override
             public void onResponse(Call<ResponseMovie> call, Response<ResponseMovie> response) {
